@@ -1,0 +1,16 @@
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --primary: #030213;
+  --secondary: oklch(0.95 0.0058 264.53);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", sans-serif;
+}
