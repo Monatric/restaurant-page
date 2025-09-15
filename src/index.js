@@ -1,3 +1,5 @@
 import "./styles.css";
+import { Home } from "./modules/home";
 
-console.log("hi");
+const content = document.querySelector("#content");
+content.appendChild(Home);
