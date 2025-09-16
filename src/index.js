@@ -1,5 +1,6 @@
 import "./styles.css";
 import { Home } from "./modules/home";
+import { Menu } from "./modules/menu";
 
 const content = document.querySelector("#content");
 const nav = document.querySelector("nav");
@@ -13,6 +14,7 @@ nav.addEventListener("click", (event) => {
         content.appendChild(Home);
         break;
       case "Menu":
+        content.appendChild(Menu);
         break;
     }
 
