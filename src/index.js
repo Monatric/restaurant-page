@@ -5,16 +5,21 @@ import { Menu } from "./modules/menu";
 const content = document.querySelector("#content");
 const nav = document.querySelector("nav");
 let activeBtn = document.querySelector(".nav__button.active");
+let activePage = Home;
 
 nav.addEventListener("click", (event) => {
   if (event.target.tagName === "BUTTON") {
     activeBtn.classList.remove("active");
     switch (event.target.textContent) {
       case "Home":
-        content.appendChild(Home);
+        content.replaceChild(Home, activePage);
+        activePage = Home;
         break;
       case "Menu":
-        content.appendChild(Menu);
+        content.replaceChild(Menu, activePage);
+        activePage = Menu;
+        break;
+      case "About":
         break;
     }
 
@@ -24,5 +29,5 @@ nav.addEventListener("click", (event) => {
 });
 
 window.onload = function () {
-  content.appendChild(Home);
+  content.appendChild(activePage);
 };
