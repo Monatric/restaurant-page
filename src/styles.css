@@ -4,6 +4,7 @@
   --primary: #030213;
   --secondary: oklch(0.95 0.0058 264.53);
   --muted-foreground: #717182;
+  --accent: #e9ebef;
 }
 
 * {
@@ -60,8 +61,12 @@ p {
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
   border-color: none;
-  color: #fff;
-  background-color: dodgerblue;
+  color: var(--primary);
+  background-color: #fff;
+}
+
+.nav__button:hover {
+  background-color: var(--accent);
 }
 
 .hero {
@@ -101,7 +106,7 @@ p {
 }
 
 .hero .hero__button:hover {
-  background-color: rgb(242, 242, 242);
+  background-color: var(--accent);
 }
 
 .menu {
