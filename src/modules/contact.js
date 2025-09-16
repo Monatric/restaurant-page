@@ -59,6 +59,22 @@ new ContactDetailsInfo(
   contactDetailLocationDesc
 ).appendToContainer();
 
+const contactDetailPhoneTitle = "Phone";
+const contactDetailPhoneDesc = "(555) 123-4567";
+new ContactDetailsInfo(
+  phone,
+  contactDetailPhoneTitle,
+  contactDetailPhoneDesc
+).appendToContainer();
+
+const contactDetailEmailTitle = "Email";
+const contactDetailEmailDesc = "hells@kitchen.com";
+new ContactDetailsInfo(
+  email,
+  contactDetailEmailTitle,
+  contactDetailEmailDesc
+).appendToContainer();
+
 contactSection.append(contactHeading, contactPara, contactDetails);
 
 export { contactSection as Contact };
