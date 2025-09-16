@@ -1,6 +1,7 @@
 import "./styles.css";
 import { Home } from "./modules/home";
 import { Menu } from "./modules/menu";
+import { Contact } from "./modules/contact";
 
 const content = document.querySelector("#content");
 const nav = document.querySelector("nav");
@@ -19,7 +20,9 @@ nav.addEventListener("click", (event) => {
         content.replaceChild(Menu, activePage);
         activePage = Menu;
         break;
-      case "About":
+      case "Contact":
+        content.replaceChild(Contact, activePage);
+        activePage = Contact;
         break;
     }
 
