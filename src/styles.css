@@ -69,6 +69,15 @@ p {
   background-color: var(--accent);
 }
 
+.nav__button.active {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.nav__button.active:hover {
+  background-color: #2d2d34;
+}
+
 .hero {
   flex: 1;
   height: 100%;
