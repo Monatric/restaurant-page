@@ -1,4 +1,6 @@
 import pasta from "../images/restaurant-pasta.jpeg";
+import pizza from "../images/restaurant-pizza.jpeg";
+import risotto from "../images/restaurant-gourmet-dish.jpeg";
 
 const menuSection = document.createElement("section");
 menuSection.classList.add("menu");
@@ -80,6 +82,30 @@ new MenuCard(
   menuOptionOneDesc,
   menuOptionOneTag,
   menuOptionOnePrice
+).appendToContainer();
+
+const menuOptionTwoFood = "Pizza Napoletana";
+const menuOptionTwoDesc = "Authentic Neapolitan pizza with buffalo mozzarella";
+const menuOptionTwoTag = "Traditional";
+const menuOptionTwoPrice = "$22";
+new MenuCard(
+  pizza,
+  menuOptionTwoFood,
+  menuOptionTwoDesc,
+  menuOptionTwoTag,
+  menuOptionTwoPrice
+).appendToContainer();
+
+const menuOptionThreeFood = "Risotto ai Porcini";
+const menuOptionThreeDesc = "Creamy risotto with wild porcini mushrooms";
+const menuOptionThreeTag = "Seasonal";
+const menuOptionThreePrice = "$28";
+new MenuCard(
+  risotto,
+  menuOptionThreeFood,
+  menuOptionThreeDesc,
+  menuOptionThreeTag,
+  menuOptionThreePrice
 ).appendToContainer();
 
 menuSection.append(
