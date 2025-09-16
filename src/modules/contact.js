@@ -17,6 +17,29 @@ contactPara.textContent = `Visit us, call us, or make a reservation to experienc
 const contactDetails = document.createElement("div");
 contactDetails.classList.add("contact__details");
 
+const contactReservation = document.createElement("div");
+contactReservation.classList.add("contact__reservation");
+
+const contactReservationHeading = document.createElement("h2");
+contactReservationHeading.classList.add("contact__reservation_heading");
+contactReservationHeading.textContent = "Make a Reservation";
+
+const contactReservationPara = document.createElement("p");
+contactReservationPara.classList.add("contact__reservation_para");
+contactReservationPara.textContent = `We recommend making a reservation, especially for dinner service and
+            weekends. Call us or book online to secure your table.`;
+
+const contactReservationCTA = document.createElement("div");
+contactReservationCTA.classList.add("contact__cta");
+
+const contactReservationCTAPrimary = document.createElement("button");
+contactReservationCTAPrimary.classList.add("contact__cta_primary");
+contactReservationCTAPrimary.textContent = "Book Online";
+
+const contactReservationCTASecondary = document.createElement("button");
+contactReservationCTASecondary.classList.add("contact__cta_secondary");
+contactReservationCTASecondary.textContent = "Call Us";
+
 class ContactDetailsInfo {
   contactDetailsInfo = document.createElement("div");
   contactDetailsTitle = document.createElement("h3");
@@ -75,6 +98,22 @@ new ContactDetailsInfo(
   contactDetailEmailDesc
 ).appendToContainer();
 
-contactSection.append(contactHeading, contactPara, contactDetails);
+contactReservationCTA.append(
+  contactReservationCTAPrimary,
+  contactReservationCTASecondary
+);
+
+contactReservation.append(
+  contactReservationHeading,
+  contactReservationPara,
+  contactReservationCTA
+);
+
+contactSection.append(
+  contactHeading,
+  contactPara,
+  contactDetails,
+  contactReservation
+);
 
 export { contactSection as Contact };
