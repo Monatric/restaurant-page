@@ -129,6 +129,8 @@ p {
 .menu .menu__card_container {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu .menu__card_container .menu__card {
