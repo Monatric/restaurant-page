@@ -57,6 +57,10 @@ p {
   font-size: 1.5rem;
 }
 
+.svg {
+  width: 25px;
+}
+
 .nav__button {
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
@@ -189,4 +193,95 @@ p {
 .menu__card .menu__card_info .menu__card_footer .menu__price {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact .contact__heading {
+  color: #030213;
+  margin-top: 1rem;
+}
+
+.contact .contact__para {
+  color: var(--muted-foreground);
+  margin: 1rem 0;
+}
+
+.contact .contact__details {
+  margin: 2rem 0;
+  border: 1px solid var(--muted-foreground);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  max-width: 700px;
+}
+
+.contact .contact__details .contact__details_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact .contact__details .contact__details_info .contact__details_title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact .contact__details .contact__details_info .contact__details_desc {
+  color: var(--muted-foreground);
+  font-size: 1rem;
+}
+
+.contact .contact__reservation {
+  max-width: 700px;
+  margin: 2rem 0;
+  background-color: #f5f7fc;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact .contact__reservation .contact__reservation_para {
+  color: var(--muted-foreground);
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.contact .contact__reservation .contact__cta button {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+}
+
+.contact .contact__reservation .contact__cta .contact__cta_primary {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.contact .contact__reservation .contact__cta .contact__cta_primary:hover {
+  background-color: #2d2d34;
+}
+
+.contact .contact__reservation .contact__cta .contact__cta_secondary {
+  background-color: #fff;
+  border: 1px solid var(--accent);
+  color: var(--primary);
+}
+
+.contact .contact__reservation .contact__cta .contact__cta_secondary:hover {
+  background-color: var(--accent);
 }
